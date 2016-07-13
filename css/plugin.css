@@ -1,0 +1,53 @@
+/* Meta Box */
+
+.link-picker {
+	box-sizing: border-box;
+}
+.link-picker div {
+	float: left;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.link-picker label {
+	/*font-size: 90%;
+	color: #aaa;*/
+}
+.link-picker .button {
+	width: 50px;
+	text-align: center;
+	margin-top: 2px;
+}
+.link-picker .label-title, .link-picker .text {
+	width: 30%;
+	text-align: left;
+}
+.link-picker .label-url, .link-picker .url {
+	width: 30%;
+	text-align: left;
+}
+.link-picker .label-blank, .link-picker .blank {
+	width: 25%;
+	text-align: left;
+}
+.link-picker .label-choose, .link-picker .choose {
+	width: 15%;
+	text-align: left;
+}
+.link-picker div label {
+	display: block;
+}
+
+.link-picker input[type=text],
+.link-picker input[type=url],
+.link-picker select {
+	width: 100% !important;
+}
+
+.link-picker select {
+	height: 32px !important;
+	font-size:14px !important;
+	margin-top: 1px !important;
+}
