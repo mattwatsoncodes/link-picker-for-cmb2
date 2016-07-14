@@ -1,6 +1,6 @@
 # Link Picker for CMB2
 
-Link Picker control designed to work with [CMB2](https://wordpress.org/plugins/cmb2/)
+Link Picker control designed to work with CMB2
 
 ## About
 
@@ -24,3 +24,4 @@ Features:
 ## Changelog
 
 **1.0.0** - *11.07.2016* - First stable release.  
+**1.0.1** - *14.07.2016* - Media assets error message fix.  

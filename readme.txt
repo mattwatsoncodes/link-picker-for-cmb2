@@ -4,11 +4,11 @@ Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
 Tested up to: 4.5
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Link Picker control designed to work with [CMB2](https://wordpress.org/plugins/cmb2/)
+Link Picker control designed to work with CMB2
 
 == Description ==
 
@@ -42,3 +42,6 @@ Features:
 
 = 1.0.0 =
 * First stable release
+
+= 1.0.1 =
+* Media assets error message fix  
