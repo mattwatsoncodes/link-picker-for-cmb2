@@ -4,7 +4,7 @@ Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
 Tested up to: 4.5
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,4 +44,7 @@ Features:
 * First stable release
 
 = 1.0.1 =
-* Media assets error message fix  
+* Media assets error message fix
+
+= 1.0.2 =
+* Updated responsiveness of control

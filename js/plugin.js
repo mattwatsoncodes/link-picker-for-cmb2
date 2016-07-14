@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 		$('.cmb-type-link-picker').each( function() {
 			url       = $(this).find('input.cmb_text_url');
 			container = $(this).find('.link-picker');
-			if( url.width() < 160 ) {
+			if( url.width() < 150 ) {
 				container.find('div').each( function() {
 						$(this).css('width', '50%');
 					}

@@ -21,7 +21,7 @@
 	margin-top: 2px;
 }
 .link-picker .label-title, .link-picker .text {
-	width: 30%;
+	width: 35%;
 	text-align: left;
 }
 .link-picker .label-url, .link-picker .url {
@@ -33,7 +33,7 @@
 	text-align: left;
 }
 .link-picker .label-choose, .link-picker .choose {
-	width: 15%;
+	width: 10%;
 	text-align: left;
 }
 .link-picker div label {
