@@ -12,7 +12,6 @@ jQuery(document).ready(function($) {
 		url            = $(this).closest('.link-picker').find('input.cmb_text_url ');
 		text           = $(this).closest('.link-picker').find('input.cmb_text ');
 		blank          = $(this).closest('.link-picker').find('input.cmb_checkbox ');
-		wpActiveEditor = true;
 		wpLink.open();
 		wpLink.textarea = url;
 
