@@ -34,12 +34,12 @@ class AssetsController {
 		wp_enqueue_style( MKDO_LPFC_TEXT_DOMAIN, $plugin_css_url );
 
 		/* Media */
-  		if ( isset( $post_id ) ) {
+		if ( isset( $post_id ) ) {
 			wp_enqueue_media( array( 'post' => $post_id ) );
 		}
 
 		/* JS */
 		$plugin_js_url  = plugins_url( 'js/plugin.js', MKDO_LPFC_ROOT );
-		wp_enqueue_script( MKDO_LPFC_TEXT_DOMAIN, $plugin_js_url, array( 'jquery', 'jquery-ui-core', 'jquery-ui-draggable', 'jquery-ui-droppable', 'thickbox', 'wpdialogs' ), '1.0.0', true );
+		wp_enqueue_script( MKDO_LPFC_TEXT_DOMAIN, $plugin_js_url, array( 'jquery', 'jquery-ui-core', 'jquery-ui-draggable', 'jquery-ui-droppable', 'thickbox', 'wpdialogs', 'wplink' ), '1.0.4', true );
 	}
 }

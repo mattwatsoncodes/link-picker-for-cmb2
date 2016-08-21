@@ -51,3 +51,9 @@
 	font-size:14px !important;
 	margin-top: 1px !important;
 }
+
+/* Hide the Placeholder TinyMCE Editor */
+.hidden #wp-placeholder-wrap {
+	display: none;
+	visibility: hidden;
+}

@@ -27,3 +27,4 @@ Features:
 **1.0.1** - *14.07.2016* - Media assets error message fix
 **1.0.2** - *14.07.2016* - Updated responsiveness of control  
 **1.0.3** - *21.08.2016* - Fixed JS issues (with thanks to [sagetopia](https://profiles.wordpress.org/sagetopia/))    
+**1.0.4** - *21.08.2016* - Control now works if editor not supported by post type   

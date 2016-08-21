@@ -3,15 +3,15 @@ jQuery(document).ready(function($) {
 	/* Open the Link Window*/
 
 	var url   = $('body');
-	var text = $('body');
+	var text  = $('body');
 	var blank = $('body');
 
 	$('body').on('click', '.js-insert-link', function(event) {
 		event.preventDefault ? event.preventDefault() : event.returnValue = false;
 		event.stopPropagation();
-		url            = $(this).closest('.link-picker').find('input.cmb_text_url ');
-		text           = $(this).closest('.link-picker').find('input.cmb_text ');
-		blank          = $(this).closest('.link-picker').find('input.cmb_checkbox ');
+		url   = $(this).closest('.link-picker').find('input.cmb_text_url ');
+		text  = $(this).closest('.link-picker').find('input.cmb_text ');
+		blank = $(this).closest('.link-picker').find('input.cmb_checkbox ');
 		wpLink.open();
 		wpLink.textarea = url;
 

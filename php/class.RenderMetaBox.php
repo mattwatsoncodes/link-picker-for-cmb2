@@ -23,6 +23,7 @@ class RenderMetaBox {
 		add_filter( 'cmb2_sanitize_link_picker', array( $this, 'cmb2_sanitize_link_picker_split' ), 12, 4 );
 		add_filter( 'cmb2_sanitize_link_picker', array( $this, 'cmb2_sanitize_link_picker' ), 10, 5 );
 		add_filter( 'cmb2_types_esc_link_picker', array( $this, 'cmb2_types_esc_link_picker' ), 10, 4 );
+		add_action( 'edit_form_advanced', array( $this, 'render_placeholder_wysiwyg' ), 99 );
 	}
 
 	/**
@@ -151,5 +152,20 @@ class RenderMetaBox {
 			}
 		}
 		return $meta_value;
+	}
+
+	/**
+	 * Render a placeholder wysiwyg box to allow dialogs to fire
+	 * @return string		A TinyMCE wysiwyg editor
+	 */
+	function render_placeholder_wysiwyg() {
+
+		global $post;
+
+		if ( ! post_type_supports( $post->post_type, 'editor' ) ) {
+			echo '<div class="hidden">';
+			wp_editor( '', 'placeholder' );
+			echo '</div>';
+		}
 	}
 }
