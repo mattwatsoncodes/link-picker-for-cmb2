@@ -26,3 +26,4 @@ Features:
 **1.0.0** - *11.07.2016* - First stable release.  
 **1.0.1** - *14.07.2016* - Media assets error message fix
 **1.0.2** - *14.07.2016* - Updated responsiveness of control  
+**1.0.3** - *21.08.2016* - Fixed JS issues (with thanks to [sagetopia](https://profiles.wordpress.org/sagetopia/))    
