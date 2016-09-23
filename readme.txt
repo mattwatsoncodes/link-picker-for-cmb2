@@ -4,7 +4,7 @@ Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
 Tested up to: 4.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,3 +54,6 @@ Features:
 
 = 1.0.4 =
 * Control now works if editor not supported by post type
+
+= 1.0.5 =
+* Fixed a bug where the link was getting added to the main content editor

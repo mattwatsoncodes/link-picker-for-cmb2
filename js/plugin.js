@@ -9,9 +9,10 @@ jQuery(document).ready(function($) {
 	$('body').on('click', '.js-insert-link', function(event) {
 		event.preventDefault ? event.preventDefault() : event.returnValue = false;
 		event.stopPropagation();
-		url   = $(this).closest('.link-picker').find('input.cmb_text_url ');
-		text  = $(this).closest('.link-picker').find('input.cmb_text ');
-		blank = $(this).closest('.link-picker').find('input.cmb_checkbox ');
+		url            = $(this).closest('.link-picker').find('input.cmb_text_url ');
+		text           = $(this).closest('.link-picker').find('input.cmb_text ');
+		blank          = $(this).closest('.link-picker').find('input.cmb_checkbox ');
+		wpActiveEditor = 'placeholder';
 		wpLink.open();
 		wpLink.textarea = url;
 
@@ -28,7 +29,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('body').on('click', '#wp-link-submit', function(event) {
-		console.log(text)
+
 		var linkAtts = wpLink.getAttrs();
 
 		linkAtts.text = $('#wp-link-text').val();

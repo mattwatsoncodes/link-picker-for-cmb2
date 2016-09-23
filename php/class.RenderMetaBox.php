@@ -162,10 +162,9 @@ class RenderMetaBox {
 
 		global $post;
 
-		if ( ! post_type_supports( $post->post_type, 'editor' ) ) {
-			echo '<div class="hidden">';
-			wp_editor( '', 'placeholder' );
-			echo '</div>';
-		}
+		echo '<div class="hidden">';
+		wp_editor( '', 'placeholder' );
+		echo '</div>';
+
 	}
 }
