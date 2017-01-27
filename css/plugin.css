@@ -11,10 +11,6 @@
 	box-sizing: border-box;
 	padding: 5px;
 }
-.link-picker label {
-	/*font-size: 90%;
-	color: #aaa;*/
-}
 .link-picker .button {
 	width: 50px;
 	text-align: center;
