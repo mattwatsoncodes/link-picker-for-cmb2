@@ -1,13 +1,16 @@
 <?php
-namespace mkdo\link_picker_for_cmb2;
 /**
- * Class AssetsController
- *
- * Sets up the JS and CSS needed for this plugin
+ * Class Controller_Assets
  *
  * @package mkdo\link_picker_for_cmb2
  */
-class AssetsController {
+
+namespace mkdo\link_picker_for_cmb2;
+
+/**
+ * Sets up the JS and CSS needed for this plugin
+ */
+class Controller_Assets {
 
 	/**
 	 * Constructor
@@ -31,7 +34,7 @@ class AssetsController {
 
 		/* CSS */
 		$plugin_css_url = plugins_url( 'css/plugin.css', MKDO_LPFC_ROOT );
-		wp_enqueue_style( MKDO_LPFC_TEXT_DOMAIN, $plugin_css_url );
+		wp_enqueue_style( 'link-picker-for-cmb2', $plugin_css_url );
 
 		/* Media */
 		if ( isset( $post_id ) ) {
@@ -40,6 +43,6 @@ class AssetsController {
 
 		/* JS */
 		$plugin_js_url  = plugins_url( 'js/plugin.js', MKDO_LPFC_ROOT );
-		wp_enqueue_script( MKDO_LPFC_TEXT_DOMAIN, $plugin_js_url, array( 'jquery', 'jquery-ui-core', 'jquery-ui-draggable', 'jquery-ui-droppable', 'thickbox', 'wpdialogs', 'wplink' ), '1.0.4', true );
+		wp_enqueue_script( 'link-picker-for-cmb2', $plugin_js_url, array( 'jquery', 'jquery-ui-core', 'jquery-ui-draggable', 'jquery-ui-droppable', 'thickbox', 'wpdialogs', 'wplink' ), '1.2.0', true );
 	}
 }

@@ -28,4 +28,6 @@ Features:
 **1.0.2** - *14.07.2016* - Updated responsiveness of control  
 **1.0.3** - *21.08.2016* - Fixed JS issues (with thanks to [sagetopia](https://profiles.wordpress.org/sagetopia/))    
 **1.0.4** - *21.08.2016* - Control now works if editor not supported by post type   
-**1.0.5** - *23.09.2016* - Fixed a bug where the link was getting added to the main content editor  
+**1.0.5** - *23.09.2016* - Fixed a bug where the link was getting added to the main content editor
+**1.1.0** - *27.01.2017* - JS Error free for 2017! - Squashed all those nasty JS console bugs  
+**1.2.0** - *27.01.2017* - WP Coding Standards, We got em! - Now passes those pesky WP Coding Standards   
