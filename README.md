@@ -1,6 +1,8 @@
 # Link Picker for CMB2
 
-Link Picker control designed to work with CMB2
+Link Picker control designed to work with CMB2.
+
+![Link Picker for CMB2](https://github.com/mkdo/link-picker-for-cmb2/blob/master/assets/banner-1544x500.png?raw=true "Link Picker for CMB2")
 
 ## About
 
