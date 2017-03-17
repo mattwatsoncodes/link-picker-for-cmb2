@@ -4,7 +4,7 @@ Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
 Tested up to: 4.7.2
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,3 +63,6 @@ Features:
 
 = 1.2.0 =
 * WP Coding Standards, We got em! - Now passes those pesky WP Coding Standards
+
+= 1.2.1 =
+* Added new artwork

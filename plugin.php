@@ -8,7 +8,7 @@
  * Plugin Name:       Link Picker for CMB2
  * Plugin URI:        https://github.com/mkdo/link-picker-for-cmb2
  * Description:       Link Picker control designed to work with CMB2
- * Version:           1.2.0
+ * Version:           1.2.1
  * Author:            Make Do <hello@makedo.net>
  * Author URI:        http://www.makedo.in
  * License:           GPL-2.0+
