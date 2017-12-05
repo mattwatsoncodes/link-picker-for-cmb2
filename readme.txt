@@ -1,5 +1,5 @@
 === Link Picker for CMB2 ===
-Contributors: mkdo, mwtsn, sagetopia
+Contributors: mkdo, mwtsn, sagetopia, moorlater
 Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
