@@ -31,11 +31,14 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . 'php/class-*.php' ) as $filename )
 use mkdo\link_picker_for_cmb2\Controller_Main;
 use mkdo\link_picker_for_cmb2\Controller_Assets;
 use mkdo\link_picker_for_cmb2\Render_Meta_Box;
+use mkdo\link_picker_for_cmb2\Settings;
 
 // Initialize Classes.
 $controller_assets = new Controller_Assets();
 $render_meta_box   = new Render_Meta_Box();
 $controller        = new Controller_Main( $controller_assets, $render_meta_box );
+$settings          = new Settings();
 
 // Run the Plugin.
 $controller->run();
+$settings->run();
