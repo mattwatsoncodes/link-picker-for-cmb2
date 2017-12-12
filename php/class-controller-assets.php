@@ -23,7 +23,7 @@ class Controller_Assets {
 	 */
 	public function run() {
 		global $pagenow;
-		if ( $pagenow != 'media-new.php' ) {
+		if ( 'media-new.php' !== $pagenow ) {
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
 		}
 	}
