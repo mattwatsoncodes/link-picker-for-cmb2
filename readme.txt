@@ -47,10 +47,10 @@ $cmb->add_field( array(
 Example display:
 
 ```
-$url = get_post_meta( $post_ID, '_yourprefix_url', true );
+$url = get_post_meta( get_the_ID(), '_yourprefix_url', true );
 
 
-if ( 'true' == $url[0]['blank'] ) {
+if ( 'true' === $url[0]['blank'] ) {
 	$blank = ' target="_blank"';
 } else {
 	$blank = '';
@@ -60,7 +60,7 @@ printf(
 	'<a href="%s"%s>%s</a>',
 	esc_url( $url[0]['url'] ),
 	$blank,
-	esc_attr( $url[0]['text'] )
+	esc_html( $url[0]['text'] )
 );
 ```
 
