@@ -22,7 +22,10 @@ class Controller_Assets {
 	 * Do Work
 	 */
 	public function run() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+		global $pagenow;
+		if ( $pagenow != 'media-new.php' ) {
+			add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+		}
 	}
 
 	/**

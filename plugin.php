@@ -19,11 +19,13 @@
 
 // Constants.
 define( 'MKDO_LPFC_ROOT', __FILE__ );
+define( 'MKDO_LPFC_NAME', 'Link Picker for CMB2' );
+define( 'MKDO_LPFC_PREFIX', 'mkdo_lpfc' );
 
-// Load Classes.
-require_once 'php/class-controller-main.php';
-require_once 'php/class-controller-assets.php';
-require_once 'php/class-render-meta-box.php';
+// Auto Load Classes from the php/ folder.
+foreach ( glob( plugin_dir_path( __FILE__ ) . 'php/class-*.php' ) as $filename ) {
+	require_once $filename;
+}
 
 // Use Namespaces.
 use mkdo\link_picker_for_cmb2\Controller_Main;

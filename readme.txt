@@ -1,5 +1,5 @@
 === Link Picker for CMB2 ===
-Contributors: mkdo, mwtsn, sagetopia
+Contributors: mkdo, mwtsn, sagetopia, moorlater
 Donate link:
 Tags: link, link picker, cmb2
 Requires at least: 4.5
@@ -22,12 +22,47 @@ Features:
 * Outputs an array of `text`, `url` and `blank` when using `get_post_meta`
 * You are able to split the values of the field into individual parts by setting `split_values` to `true`. You can retrieve the split values by using the ID of the field and appending `_text`, `_url` and `_blank` to the ID when using `get_post_meta` (not compatible if using a repeatable field)
 
+See usage examples under Installation.
+
 == Installation ==
 
 1. Backup your WordPress install
 2. Upload the plugin folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Configure the plugin via the 'Link Picker for CMB2' options page under the WordPress 'Settings' Menu
+4. There are no settings for the plugin.  See examples below for usage.
+
+Example metabox:
+
+```
+$cmb->add_field( array(
+	'name' => __( 'Website URL', 'cmb2' ),
+	'desc' => __( 'field description (optional)', 'cmb2' ),
+	'id'   => $prefix . 'url',
+	'type' => 'link_picker',
+	'repeatable' => true,
+	'split_values' => true  // default is false
+) );
+```
+
+Example display:
+
+```
+$url = get_post_meta( get_the_ID(), '_yourprefix_url', true );
+
+
+if ( 'true' === $url[0]['blank'] ) {
+	$blank = ' target="_blank"';
+} else {
+	$blank = '';
+}
+
+printf(
+	'<a href="%s"%s>%s</a>',
+	esc_url( $url[0]['url'] ),
+	$blank,
+	esc_html( $url[0]['text'] )
+);
+```
 
 == Screenshots ==
 
