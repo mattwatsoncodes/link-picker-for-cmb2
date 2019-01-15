@@ -40,7 +40,7 @@ class Controller_Assets {
 		wp_enqueue_style( 'link-picker-for-cmb2', $plugin_css_url );
 
 		/* Media */
-		if ( isset( $post_id ) ) {
+		if ( isset( $post_id ) && $post_id <> 0 ) {
 			wp_enqueue_media( array( 'post' => $post_id ) );
 		}
 
